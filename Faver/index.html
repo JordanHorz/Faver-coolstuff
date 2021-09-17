@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faver | Cool Stuff</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<audio src="images/Enzalla - Rose.mp3" autoplay loop></audio>.
+<div class="container">
+ <div class="navbar">
+   <div class="logo">
+     <img src="images/logo.gif" width="300px">
+   </div>
+   <nav>
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="ballgame.html">BallGame</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="contact.html">Contact</a></li>
+     </ul>
+   </nav>
+ </div>
+ <h1> YO WHATSUP!!!</h1>
+ <h1> So this is my website .. yeah kinda cool right? ... </h1>
+ <br>
+ <h1> \ (o_o) / </h1>
+ <a href="about.html" class="btn"> Explore now &#8594;</a>
+ <div class="eyes">
+       <div class="eye">
+           <div class="ball">
+           </div>
+       </div>
+       <div class="eye">
+           <div class="ball">
+           </div>
+       </div>
+   </div>
+<script>
+var balls = document.getElementsByClassName("ball");
+document.onmousemove = function() {
+   var x = event.clientX * 100 / window.innerWidth + "%";
+   var y = event.clientY * 100 / window.innerHeight + "%";
+   for(var i=0;i<2;i++){
+       balls[i].style.left = x;
+       balls[i].style.top = y;
+       balls[i].style.transform = "translate(-"+x+",-"+y+")"
+   }
+}
+</script>
+</div>
+</body>
+</html>
